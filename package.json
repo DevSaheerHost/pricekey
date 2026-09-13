@@ -1,46 +1,27 @@
 {
-  "name": "phoenix",
-  "version": "1.8.0-rc.3",
-  "description": "The official JavaScript client for the Phoenix web framework.",
-  "license": "MIT",
-  "module": "./priv/static/phoenix.mjs",
-  "main": "./priv/static/phoenix.cjs.js",
-  "unpkg": "./priv/static/phoenix.min.js",
-  "jsdelivr": "./priv/static/phoenix.min.js",
-  "exports": {
-    "import": "./priv/static/phoenix.mjs",
-    "require": "./priv/static/phoenix.cjs.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/phoenixframework/phoenix.git"
-  },
-  "author": "Chris McCord <chris@chrismccord.com> (https://www.phoenixframework.org)",
-  "files": [
-    "README.md",
-    "LICENSE.md",
-    "package.json",
-    "priv/static/*",
-    "assets/js/phoenix/*"
-  ],
-  "devDependencies": {
-    "@babel/cli": "7.27.2",
-    "@babel/core": "7.27.4",
-    "@babel/preset-env": "7.27.2",
-    "@eslint/js": "^9.28.0",
-    "@stylistic/eslint-plugin": "^4.4.0",
-    "documentation": "^14.0.3",
-    "eslint": "9.28.0",
-    "eslint-plugin-jest": "28.13.5",
-    "jest": "^30.0.0",
-    "jest-environment-jsdom": "^30.0.0",
-    "jsdom": "^26.1.0",
-    "mock-socket": "^9.3.1"
-  },
+  "name": "shop-price-assistant",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "test": "jest",
-    "test.coverage": "jest --coverage",
-    "test.watch": "jest --watch",
-    "docs": "documentation build assets/js/phoenix/index.js -f html -o doc/js"
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "playwright": "^1.63.0",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.4"
   }
 }
