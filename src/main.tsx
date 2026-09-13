@@ -14,3 +14,11 @@ createRoot(document.getElementById("root")!).render(
     </AppDataProvider>
   </StrictMode>,
 );
+
+if ("serviceWorker" in navigator && import.meta.env.PROD) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {
+      // Offline caching is a progressive enhancement — ignore registration failures.
+    });
+  });
+}
