@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: 255 255 255;
+  --surface-raised: 250 250 251;
+  --border: 228 228 232;
+  --ink: 23 23 28;
+  --ink-soft: 90 90 100;
+  --ink-faint: 148 148 158;
+  --accent: 79 70 229;
+  --accent-soft: 238 237 253;
+  --good: 22 130 90;
+  --good-soft: 224 245 236;
+  --best: 21 108 178;
+  --best-soft: 224 240 250;
+  --max: 180 83 9;
+  --max-soft: 253 237 219;
+  --danger: 200 40 45;
+  --danger-soft: 253 232 232;
+}
+
+.dark {
+  --surface: 20 20 24;
+  --surface-raised: 30 30 35;
+  --border: 50 50 58;
+  --ink: 240 240 245;
+  --ink-soft: 178 178 190;
+  --ink-faint: 118 118 130;
+  --accent: 129 140 248;
+  --accent-soft: 40 40 62;
+  --good: 74 222 165;
+  --good-soft: 20 45 38;
+  --best: 96 178 240;
+  --best-soft: 20 40 55;
+  --max: 245 158 79;
+  --max-soft: 55 38 18;
+  --danger: 245 105 105;
+  --danger-soft: 55 25 26;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  background-color: rgb(var(--surface));
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
